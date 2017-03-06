@@ -24,6 +24,10 @@ Window::Window(int width, int height, std::string title){
         std::cout << glewGetErrorString(glewInitErr) << std::endl;
     }
 
+    renderer = Renderer(window);
+
+    renderer.setVSync(true);
+
     glClearColor(0.0,0.0,0.0,0.0);
 
     while(!glfwWindowShouldClose(window)){
@@ -31,6 +35,7 @@ Window::Window(int width, int height, std::string title){
         glClear(GL_COLOR_BUFFER_BIT);
         //Draw Code
 
+        renderer.draw();
 
         glfwSwapBuffers(window);
         glfwPollEvents();
