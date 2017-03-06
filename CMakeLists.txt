@@ -3,7 +3,7 @@ project(BrownWillyEngine)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp window/Window.cpp window/Window.h graphics/Renderer.cpp graphics/Renderer.h)
+set(SOURCE_FILES main.cpp window/Window.cpp window/Window.h graphics/Renderer.cpp graphics/Renderer.h entity/Entity.cpp entity/Entity.h)
 
 #Incldue GLEW
 add_definitions(-DGLEW_STATIC -DGLEW_BUILD)
