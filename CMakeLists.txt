@@ -3,7 +3,7 @@ project(BrownWillyEngine)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp)
+set(SOURCE_FILES main.cpp Window.cpp Window.h)
 
 #Incldue GLEW
 add_definitions(-DGLEW_STATIC -DGLEW_BUILD)
