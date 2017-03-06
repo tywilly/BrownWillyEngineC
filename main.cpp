@@ -7,15 +7,23 @@ int main() {
     float rotation = 0;
 
     if(!glfwInit()){
-        std::cout << "Failed to Init GLFW" << std::endl;
+        std::cout << "Failed to Init GLFW!" << std::endl;
         return -1;
     }
 
-    glewInit();
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 1);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 1);
 
     GLFWwindow* window = glfwCreateWindow(500,500, "BrownWillyEngine", NULL, NULL);
 
     glfwMakeContextCurrent(window);
+
+    glewExperimental = GL_TRUE;
+    GLenum glewInitErr = glewInit();
+    if(glewInitErr != GLEW_OK){
+        std::cout << "Failed to Init GLEW!" << std::endl;
+        std::cout << glewGetErrorString(glewInitErr) << std::endl;
+    }
 
     glClearColor(0.0,0.0,0.0,0.0);
 
