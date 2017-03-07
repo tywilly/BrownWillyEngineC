@@ -5,6 +5,7 @@
 #ifndef BROWNWILLYENGINE_WINDOW_H
 #define BROWNWILLYENGINE_WINDOW_H
 
+#include "../graphics/Renderer.h"
 #include <iostream>
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
@@ -18,6 +19,8 @@ public:
 protected:
 private:
     GLFWwindow* window;
+    Renderer renderer;
+
 
 };
 
