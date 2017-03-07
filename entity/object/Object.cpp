@@ -4,7 +4,7 @@
 
 #include "Object.h"
 
-Object::Object(float x, float y, float z) : Entity(Object::getX(),Object::getY(),Object::getZ()) {
+Object::Object(float x, float y, float z) : Entity(x,y,z) {
 }
 
 Mesh* Object::getMesh() {
