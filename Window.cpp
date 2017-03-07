@@ -31,6 +31,7 @@ Window::Window(int width, int height, std::string title){
         glClear(GL_COLOR_BUFFER_BIT);
         //Draw Code
 
+        
 
         glfwSwapBuffers(window);
         glfwPollEvents();
