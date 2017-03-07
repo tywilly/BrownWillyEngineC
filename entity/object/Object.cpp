@@ -4,9 +4,13 @@
 
 #include "Object.h"
 
-Object::Object(float x, float y, float z) {
+Object::Object(float x, float y, float z) : Entity(Object::getX(),Object::getY(),Object::getZ()) {
 }
 
-Mesh Object::getMesh() {
+Mesh* Object::getMesh() {
     return objMesh;
+}
+
+void Object::setMesh(Mesh *mesh) {
+    this->objMesh = mesh;
 }

@@ -5,7 +5,7 @@
 #ifndef BROWNWILLYENGINE_RENDERER_H
 #define BROWNWILLYENGINE_RENDERER_H
 
-
+#include <GL/glew.h>
 #include <GLFW/glfw3.h>
 
 class Renderer {

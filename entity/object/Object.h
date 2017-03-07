@@ -10,11 +10,12 @@
 
 class Object : Entity {
 public:
-    Object(float x, float y, float z) : Entity(x,y,z);
-    Mesh getMesh();
+    Object(float x, float y, float z);
+    Mesh* getMesh();
+    void setMesh(Mesh* mesh);
 protected:
 private:
-    Mesh objMesh;
+    Mesh* objMesh;
 };
 
 

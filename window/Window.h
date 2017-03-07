@@ -16,11 +16,14 @@ class Window {
 public:
     Window(int width, int height, std::string title);
     ~Window();
+    void resizeWindow(int width, int height);
+    bool isOpen();
 protected:
 private:
     GLFWwindow* window;
-    Renderer renderer;
+    Renderer* renderer;
 
+    void resizeFrame(int width, int height);
 
 };
 
