@@ -11,7 +11,7 @@
 class Renderer {
 public:
     Renderer(GLFWwindow* window);
-    void draw();
+    void draw(long double delta);
     void setVSync(bool vSync);
 protected:
 private:

@@ -23,7 +23,7 @@ private:
     GLFWwindow* window;
     Renderer* renderer;
 
-    void resizeFrame(int width, int height);
+    void resizeFrame(float width, float height);
 
 };
 

@@ -8,10 +8,11 @@ Renderer::Renderer(GLFWwindow* window) {
     this->windowInstance = window;
 }
 
-void Renderer::draw() {
+void Renderer::draw(long double delta) {
 
     //glScalef(0.5, 0.5,0.0);
-    //glTranslatef(0.5, 0.0, -0.00000001);
+    //glTranslatef(0.0, 0.0, -3.0);
+    //glRotatef(90, 0.0,0.0, 1.0);
 
     glBegin(GL_TRIANGLES);
     glColor3f(1.0,0.0,0.0);
@@ -31,6 +32,7 @@ void Renderer::draw() {
 //    glColor3f(0.0,0.0,1.0);
 //    glVertex2f(1.0, -1.0);
 //    glEnd();
+
 
 
 }
